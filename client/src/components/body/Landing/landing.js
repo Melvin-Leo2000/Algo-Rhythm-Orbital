@@ -8,10 +8,10 @@ import background from "./climbing-image.png"
 
 export default function Landing() {
   return (
-    <div>
+    <div className='land'>
         <img className='climberbg' src={background} alt='climberbg' />
         <header>
-        <img src={logo} alt='Logo' />
+        <img className='logo_pic' src={logo} alt='Logo' />
         <ul>
           <a href="/about"><li className='about'>About Us</li></a>
           <a href="/login"><li className='log'>Login</li></a>

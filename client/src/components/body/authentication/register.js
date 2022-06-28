@@ -83,7 +83,7 @@ function Register() {
                     <input type="password" placeholder="Confirm password" id="cf_password"
                     value={cf_password} name="cf_password" onChange={handleChangeInput} />
                 </div>
-                {err && showErrMsg(err)}
+                <div className='regiserror'>{err && showErrMsg(err)}</div>
                 {success && showSuccessMsg(success)}
 
                 <div className='row2'>

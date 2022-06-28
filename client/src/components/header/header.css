@@ -1,6 +1,6 @@
-.main-container{
+.header-container{
     width: 100%;
-    min-height: 160px;
+    min-height: 0px;
     background: black;
     display: flex;
     justify-content: space-between;
@@ -12,24 +12,56 @@
 
 }
 
-.chart{
-    position: relative; left: 1450px;
+.header-logo{
+    position: absolute;
+    width: 219px;
+    height: 200px;
+    left: 0px;
+    top: -20px;
+}
+
+.news{
+    position: relative; left: 1000px; top: -32px;
+    color: rgb(255, 251, 1);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: x-large;
+
+}
+
+.home{
+    position: relative; left: 800px;
+    top: -65px;
 }
 
 
-.main-container a{
+.login_symbol{
+    position: absolute;
+    left: 1700px;
+    top: 60px;
+}
+
+.chart{
+    position: relative; left: 1350px;
+}
+
+.noHover{
+    pointer-events: none;
+}
+
+.header-container a{
     position: relative; 
     color: white;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: x-large;
 }
-.main-container ul li{
+.main-header ul li{
     display: inline-block;
     padding: 10px 20px;
     opacity: 0.7;
 }
-.main-container ul li:hover{
+.main-header ul li:hover{
     opacity: 1;
 }
 
@@ -39,7 +71,8 @@
 
 /* --------- Dropdown ---------- */
 .drop-nav{
-    position: relative; left: 1500px;
+    position: relative; left: 1650px;
+    top: 40px;
     padding: 10px 0;
 }
 .drop-nav a{
@@ -51,6 +84,7 @@
     position: absolute;
     background-color: #282c34;
     min-width: 160px;
+    min-height: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
@@ -58,6 +92,7 @@
 
 .drop-nav .dropdown li{
     display: block;
+    padding-bottom: 1em;
 }
 .drop-nav:hover .dropdown{
     display: block;

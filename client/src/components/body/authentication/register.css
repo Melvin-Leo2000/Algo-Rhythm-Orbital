@@ -9,6 +9,21 @@
     padding: 0 15px;
 }
 
+.regis_page input{
+    box-sizing: border-box;
+
+
+    width: 595px;
+    height: 69.67px;
+    background: #000000;
+    border: 2px solid #2B52DF;
+    border-radius: 10px;
+    color: white;
+    font-size: x-large;
+
+}
+
+
 .regis_page .row2{
     display: flex;
     justify-content: space-between;
@@ -23,6 +38,21 @@
     position: relative;
     left: 100px;
     top: 270px;
+}
+
+.picture{
+    position: relative;
+    object-fit: cover;
+    left: -700px;
+    top: 0px;
+    width: 180%;
+    height: 850px;
+    
+}
+
+.regiserror{
+    position: relative; top: 43%; left: 100px;
+    padding-top: 0px; padding-top: 0px;
 }
 
 .regisemail{

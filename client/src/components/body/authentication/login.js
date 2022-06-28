@@ -71,7 +71,7 @@ export default function Login() {
                     value={password} name="password" onChange={handleChangeInput} />
                 </div>
 
-                {err && showErrMsg(err)}
+                <div className='regiserror'>{err && showErrMsg(err)}</div>
                 {success && showSuccessMsg(success)}
 
                 <div className="row">

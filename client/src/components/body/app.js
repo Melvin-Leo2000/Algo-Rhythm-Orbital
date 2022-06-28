@@ -6,7 +6,12 @@ import About from "./about/about"
 import Register from "./authentication/register"
 import ActivationEmail from './authentication/ActivationEmail'
 import Main from "./main/main"
-
+import Profile from "./profile/profile"
+import NotFound from '../utils/NotFound/NotFound';
+import Post from "../body/posts/post"
+import Write from "../../components/body/newpost/newpost"
+import News from "../../components/news/news"
+import Charts from "../../Chart/chart"
 
 import {useDispatch, useSelector} from 'react-redux'
 import {dispatchLogin, fetchUser, dispatchGetUser} from '../../redux/actions/authAction'
@@ -54,8 +59,13 @@ function App() {
             <Route path="/register" element={< Register />} />
             <Route path="/user/activate/:activation_token" element={< ActivationEmail />} />
             <Route path="/main" element={< Main />} />
-
-
+            <Route path="/profile" element={< Profile />} />
+            <Route path="*" element={< NotFound />} />
+            <Route path="/post" element={< Post />} />
+            <Route path="/writepost" element={< Write />} />
+            <Route path="/news" element={< News />} />
+            <Route path="/post/:id" element={< Post />} />
+            <Route path="/chart" element={< Charts />} />
         </Routes>
     </BrowserRouter>
     );

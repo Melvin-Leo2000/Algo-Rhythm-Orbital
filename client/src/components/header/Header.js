@@ -24,15 +24,22 @@ function Header() {
     }
 
     const userLink = () => {
-        return <li className="drop-nav">
+        return <div>
+         <li className="drop-nav">
             <Link to="#" className="avatar">
             {user.name} 
             </Link>
             <ul className="dropdown">
                 <li><Link to="/profile">Profile</Link></li>
                 <li><Link to="/" onClick={handleLogout}>Logout</Link></li>
+                
             </ul>
+            
         </li>
+        <li className='chart'><a href='/chart'>Rhythm-Check</a></li>
+        <li className='news'><a href='/writepost'>Rhythm-Share</a></li>
+        <li className='home'><a href='/main'>Home</a></li>
+        </div>
     }
 
     const transForm = {
@@ -40,16 +47,16 @@ function Header() {
     }
 
     return (
-        <header className='main-container'>
-            <img src={logo} alt='Logo' />
+        <header className='header-container'>
+            <img className='header-logo' src={logo} alt='Logo' />
 
 
             <ul style={transForm}>
-                <li className='chart'><a href='/charts'>Charts</a></li>
                 {
                     isLogged
                     ? userLink()
-                    :<li><Link to="/login"><i className="fas fa-user"></i> Sign in</Link></li>
+                    :<li className='login_symbol'><a href='/login'>Sign in</a></li>
+                    
                 }
                 
             </ul>
